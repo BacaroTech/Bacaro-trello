@@ -13,7 +13,6 @@ export const useActiveBoardsStore = defineStore('boards', () => {
     const boards = ref<BottomBar[]>([])
     function toggleBoard(board: BottomBar) {
         if (isMobile()){
-            console.log('here')
             boards.value.forEach(b => b.active = false)
             board.active = true
         } else {

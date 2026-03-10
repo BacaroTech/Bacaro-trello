@@ -65,7 +65,7 @@ const dropDowns: DropDownConfig[] = [{
         <DropdownMenuTrigger class="ml-4">
           <LayoutGrid :size="20" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent class="mt-2">
+        <DropdownMenuContent class="mt-2 z-999">
           <DropdownMenuItem v-for="item in drop.items" :key="item.id">
             <router-link class="flex-1" :to="{ name: item.id, }" v-if="item?.route">
               {{ item.label }}

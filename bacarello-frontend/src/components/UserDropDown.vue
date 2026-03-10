@@ -33,7 +33,7 @@ function toggleTheme(color: string) {
             <DropdownMenuTrigger class="hover:bg-gray-300">
                 <img src="/images/profile.png" alt="" class="border rounded-lg h-8 w-8" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent class="w-56 mt-4">
+            <DropdownMenuContent class="w-56 mt-4 z-999">
                 <DropdownMenuLabel>{{ drop.label }}</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <template v-for="item in drop.items" :key="item.id">
